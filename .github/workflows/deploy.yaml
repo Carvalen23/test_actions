@@ -1,0 +1,17 @@
+name: "Hola Mundo"
+
+on:
+  push:
+    branches: ["main"]
+
+
+jobs: 
+  deploy-carlos:
+   runs-on: ubuntu-latest
+    steps:
+          run: echo "Hola Mundo desde GitHub Actions"
+          run: echo "¡Bienvenido a la automatización!"
+          run: echo "¡Feliz codificación!"
+    
+
+      
