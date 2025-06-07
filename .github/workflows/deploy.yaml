@@ -9,9 +9,14 @@ jobs:
   deploy-carlos:
    runs-on: ubuntu-latest
     steps:
-          run: echo "Hola Mundo desde GitHub Actions"
-          run: echo "¡Bienvenido a la automatización!"
-          run: echo "¡Feliz codificación!"
+      - name: Checkout code
+        uses: actions/checkout@v2
+  
+      - name: Run Hola Mundo script
+        run: |
+          echo "Hola Mundo desde GitHub Actions"
+          echo "¡Bienvenido a la automatización!"
+          echo "¡Feliz codificación!"
     
 
       
